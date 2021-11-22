@@ -1,0 +1,68 @@
+header {
+  background-color: #004064;
+  padding: 25px 0;
+}
+
+main {
+  font-size: 22px;
+}
+
+label {
+  display: block;
+  padding: 15px;
+}
+input {
+  height: 40px;
+}
+.left {
+  text-align: left;
+  align-self: center;
+}
+
+.right {
+  padding: 3px;
+  text-align: left;
+  align-self: center;
+}
+
+#submit {
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  background-color: #d65b1b;
+  color: #fff;
+  font-size: 24px;
+  transition: background-color 0.5s ease-in-out;
+  grid-area: right;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: #ff5a12;
+}
+
+footer .logo-nav {
+  padding-top: 35px;
+}
+@media (min-width: 550px) {
+  .argrid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-areas: "left right";
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .argrid {
+    padding: 15px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+}
